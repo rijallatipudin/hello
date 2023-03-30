@@ -183,11 +183,11 @@ if st.button("Konversi"):
         
 #halaman Konversi satuan luas
 st.title('Konversi satuan luas')
-    length = st.number_input("Masukkan nilai yang akan dikonversi", min_value=0.0)
-    unit1 = st.selectbox("Pilih satuan awal", ["mm^2", "cm^2", "dm^2", "m^2", "dam^2", "hm^2", "km^2"])
-    unit2 = st.selectbox("Pilih satuan tujuan", ["mm^2", "cm^2", "dm^2", "m^2", "dam^2", "hm^2", "km^2"])
+length = st.number_input("Masukkan nilai yang akan dikonversi", min_value=0.0)
+unit1 = st.selectbox("Pilih satuan awal", ["mm^2", "cm^2", "dm^2", "m^2", "dam^2", "hm^2", "km^2"])
+unit2 = st.selectbox("Pilih satuan tujuan", ["mm^2", "cm^2", "dm^2", "m^2", "dam^2", "hm^2", "km^2"])
 
-    def convert(length, unit1, unit2):
+def convert(length, unit1, unit2):
         if unit1 == "mm^2":
             if unit2 == "cm^2":
                 return length / 100
