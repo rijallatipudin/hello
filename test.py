@@ -17,7 +17,7 @@ def convert(length, unit1, unit2):
                 return length
         if unit1 == "K":
             if unit2 == "MPa":
-                return length * 0.098067 * 0.83
+                return length / 10.1972 * 0.83
             if unit2 == "K":
                 return length
                 
