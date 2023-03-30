@@ -311,7 +311,6 @@ def convert(length, unit1, unit2):
         if unit1 == "cm^2":
             if unit2 == "mm^2":
                 return length * 100
-
-    if st.button("Konversi"):
+if st.button("Konversi"):
         result = convert(length, unit1, unit2)
         st.success(f"{length} {unit1} = {result} {unit2}")
